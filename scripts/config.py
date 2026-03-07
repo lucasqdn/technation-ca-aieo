@@ -4,9 +4,13 @@ from pathlib import Path
 CKAN_BASE = "https://open.canada.ca/data/en/api/3/action"
 CKAN_PACKAGE_SEARCH_URL = f"{CKAN_BASE}/package_search"
 
-RAW_DIR = Path("data/raw")
-PROCESSED_DIR = Path("data/processed")
-DB_PATH = Path("data/db/ground_truth.sqlite")
+_ROOT = Path(__file__).parent.parent  # repo root
+
+RAW_DIR       = _ROOT / "data" / "raw"
+PROCESSED_DIR = _ROOT / "data" / "processed"
+DB_PATH       = _ROOT / "data" / "db" / "ground_truth.sqlite"
+CHROMA_DIR    = _ROOT / "data" / "chroma"
+RESULTS_DIR   = _ROOT / "data" / "results"
 
 USER_AGENT = "AiEO-Research/1.0 (+student research project)"
 

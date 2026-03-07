@@ -1,0 +1,41 @@
+question_id,question_text,target_population,target_sector,target_region,difficulty,notes
+Q001,What employment programs are available for Indigenous youth in Canada?,Indigenous,employment,national,easy,Well-known national programs expected
+Q002,What skills training programs exist for First Nations communities in British Columbia?,First_Nations,skills_training,BC,medium,Regional specificity
+Q003,Are there federal apprenticeship programs for Indigenous people in Canada?,Indigenous,skills_training,national,easy,Federal programs focus
+Q004,What government support exists for Metis workers seeking employment in Alberta?,Metis,employment,AB,medium,Province-specific population
+Q005,What education funding is available for Inuit students in Nunavut?,Inuit,education,NU,hard,Very specific region + population
+Q006,What settlement services are available for newcomers arriving in Ontario?,newcomers,immigration_settlement,ON,easy,High-volume question
+Q007,What language training programs help immigrants learn English or French in Canada?,newcomers,language_training,national,easy,Very common question
+Q008,What employment support exists for refugees in Quebec?,newcomers,employment,QC,medium,French-province focus
+Q009,Are there any government programs to help newcomers find jobs in Manitoba?,newcomers,employment,MB,medium,Less prominent province
+Q010,What skills upgrading programs are available for immigrants in Atlantic Canada?,newcomers,skills_training,NB,hard,Rural Atlantic region
+Q011,What youth employment programs does the Canadian government offer?,youth,employment,national,easy,Very common question
+Q012,Are there summer job programs for students in Canada?,youth,employment,national,easy,Expected to be well known
+Q013,What apprenticeship opportunities exist for young people under 30 in Saskatchewan?,youth,skills_training,SK,medium,Province-specific youth
+Q014,What education grants are available for low-income youth in Canada?,youth,education,national,medium,Intersection of youth + funding
+Q015,What mental health support programs exist for youth in rural areas of Canada?,youth,mental_health,national,hard,Rural + youth + mental health
+Q016,What employment programs support Canadians with disabilities?,disabilities,employment,national,easy,Common accessibility question
+Q017,What funding is available for organizations providing disability support services in Canada?,disabilities,disability_support,national,medium,Organizational funding angle
+Q018,Are there accessible skills training programs for people with disabilities in Ontario?,disabilities,skills_training,ON,medium,Province-specific accessibility
+Q019,What housing support exists for Canadians living with disabilities?,disabilities,housing,national,medium,Cross-sector disability
+Q020,What programs help people with mental health conditions find employment in Canada?,disabilities,mental_health,national,hard,Mental health + employment intersection
+Q021,What programs support women entering the workforce in Canada?,women,employment,national,easy,Gender equity programs
+Q022,Are there entrepreneurship grants for women in Canada?,women,funding_grants,national,medium,Business funding angle
+Q023,What skills training programs are designed for women in male-dominated industries?,women,skills_training,national,medium,Specific sector focus
+Q024,What support exists for Indigenous women escaping domestic violence in Canada?,women,housing,national,hard,Intersection of multiple vulnerabilities
+Q025,What programs help senior citizens access digital technology in Canada?,seniors,digital_access,national,medium,Less commonly known programs
+Q026,What healthcare programs are specifically designed for elderly Canadians?,seniors,healthcare,national,easy,Expected to be known
+Q027,What income support programs are available for low-income seniors in Canada?,seniors,funding_grants,national,easy,Common senior support
+Q028,What community programs help isolated seniors in rural Canada?,seniors,public_services,national,hard,Rural isolation angle
+Q029,What healthcare services are available to communities in Northern Canada?,rural_remote,healthcare,NT,medium,Northern territories focus
+Q030,What programs support economic development in remote Indigenous communities?,rural_remote,funding_grants,NU,hard,Very specific underserved region
+Q031,What mental health services exist for people living in rural British Columbia?,rural_remote,mental_health,BC,medium,Rural mental health
+Q032,What internet access programs exist for remote communities in Canada?,rural_remote,digital_access,national,hard,Digital divide topic
+Q033,What literacy programs are available for adults in Canada?,general_public,education,national,easy,Common education question
+Q034,What community grants does the federal government offer for social services?,general_public,funding_grants,national,easy,General funding programs
+Q035,What programs help unemployed Canadians retrain for new careers?,general_public,skills_training,national,easy,Very common question
+Q036,What housing programs are available for low-income Canadians?,general_public,housing,national,easy,Common question
+Q037,What mental health support is available for Indigenous people in Canada?,Indigenous,mental_health,national,medium,Mental health + Indigenous intersection
+Q038,What post-secondary education support exists for Indigenous students outside major cities?,Indigenous,education,national,hard,Rural Indigenous education
+Q039,What language preservation programs exist for Indigenous communities in Canada?,Indigenous,language_training,national,hard,Niche cultural program area
+Q040,What programs help newcomers access mental health services in Canada?,newcomers,mental_health,national,hard,Barrier often invisible to AI
