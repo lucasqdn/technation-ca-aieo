@@ -16,7 +16,7 @@ from pathlib import Path
 from config import CHROMA_DIR, DB_PATH
 
 SIMILARITY_THRESHOLD = 0.55   # cosine similarity >= this → "covered"
-HALLUCINATION_THRESHOLD = 0.35  # program name in response but sim < this → flag
+HALLUCINATION_THRESHOLD = 0.5  # program name in response but sim < this → flag
 TOP_K_RESPONSE = 30            # how many ChromaDB results to fetch per response
 
 

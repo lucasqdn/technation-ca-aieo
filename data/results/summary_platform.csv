@@ -1,0 +1,5 @@
+platform,avg_visibility,avg_top_match,hallucination_rate,total_responses,avg_coverage_gaps
+claude,0.069,0.644,0.0,76,128.579
+gemini,0.059,0.652,0.0,99,140.889
+chatgpt,0.058,0.648,0.0,114,128.947
+perplexity,0.054,0.647,0.0,76,129.526

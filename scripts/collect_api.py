@@ -14,6 +14,7 @@ RESPONSES_CSV = _ROOT / "data" / "responses" / "responses.csv"
 CLAUDE_MODEL = "claude-sonnet-4-6"
 GEMINI_MODEL = "gemini-3-flash-preview"
 OPENAI_MODEL = "gpt-5.4"
+PERPLEXITY_MODEL = "sonar-pro"
 
 
 def load_env() -> None:
@@ -58,7 +59,66 @@ def append_response(row: dict) -> None:
         if not file_exists:
             writer.writeheader()
         writer.writerow(row)
+def collect_perplexity(questions: list[dict], existing: set) -> None:
+    try:
+        from openai import OpenAI
+    except ImportError:
+        print("ERROR: pip install openai")
+        sys.exit(1)
 
+    api_key = os.environ.get("PERPLEXITY_API_KEY")
+    if not api_key:
+        print("ERROR: PERPLEXITY_API_KEY not set.")
+        sys.exit(1)
+
+    client = OpenAI(
+        api_key=api_key,
+        base_url="https://api.perplexity.ai",
+    )
+
+    for q in questions:
+        if (q["question_id"], "perplexity") in existing:
+            print(f"  Skipping {q['question_id']} (perplexity) — already collected.")
+            continue
+
+        print(f"  Querying Perplexity: {q['question_id']} ...", flush=True)
+        try:
+            completion = client.chat.completions.create(
+                model=PERPLEXITY_MODEL,
+                messages=[
+                    {
+                        "role": "system",
+                        "content": (
+                            "Answer the question factually and concisely. "
+                            "Prefer real organizations, programs, and communities. "
+                            "If uncertain, say so."
+                        ),
+                    },
+                    {
+                        "role": "user",
+                        "content": q["question_text"],
+                    },
+                ],
+            )
+            response_text = completion.choices[0].message.content or ""
+        except Exception as e:
+            print(f"    ERROR: {e}")
+            continue
+
+        append_response(
+            {
+                "question_id": q["question_id"],
+                "platform": "perplexity",
+                "model_version": PERPLEXITY_MODEL,
+                "response_text": response_text.replace("\n", " "),
+                "programs_mentioned": "",
+                "collected_at": datetime.now(timezone.utc).isoformat(),
+                "collection_method": "api",
+            }
+        )
+        time.sleep(1)
+
+    print("Perplexity collection complete.")
 
 def collect_claude(questions: list[dict], existing: set) -> None:
     try:
@@ -204,7 +264,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Collect AI responses via API.")
     parser.add_argument(
         "--platform",
-        choices=["claude", "gemini", "chatgpt"],
+        choices=["claude", "gemini", "chatgpt", "perplexity"],
         required=True,
         help="Which platform to query.",
     )
@@ -231,6 +291,8 @@ def main() -> None:
         collect_gemini(questions, existing)
     elif args.platform == "chatgpt":
         collect_chatgpt(questions, existing)
+    elif args.platform == "perplexity":
+        collect_perplexity(questions, existing)
 
 
 if __name__ == "__main__":
