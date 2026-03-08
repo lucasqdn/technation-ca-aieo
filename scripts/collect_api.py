@@ -1,13 +1,3 @@
-# collect_api.py
-# Optional: Automates AI response collection via Claude and Gemini APIs.
-# Requires API keys set in a .env file in the repo root:
-#   ANTHROPIC_API_KEY=sk-ant-...
-#   GOOGLE_API_KEY=...
-#
-# Usage:
-#   pip install anthropic google-generativeai python-dotenv
-#   python scripts/collect_api.py --platform claude --questions Q001,Q005,Q010
-#   python scripts/collect_api.py --platform gemini --all
 import argparse
 import csv
 import os
@@ -22,7 +12,8 @@ QUESTIONS_CSV = _ROOT / "data" / "questions.csv"
 RESPONSES_CSV = _ROOT / "data" / "responses" / "responses.csv"
 
 CLAUDE_MODEL = "claude-sonnet-4-6"
-GEMINI_MODEL = "gemini-1.5-pro"
+GEMINI_MODEL = "gemini-3-flash-preview"
+OPENAI_MODEL = "gpt-5.4"
 
 
 def load_env() -> None:
@@ -30,7 +21,7 @@ def load_env() -> None:
         from dotenv import load_dotenv
         load_dotenv(_ROOT / ".env")
     except ImportError:
-        pass  # dotenv optional; keys can be set in environment directly
+        pass
 
 
 def load_questions(ids: list[str] | None = None) -> list[dict]:
@@ -44,7 +35,6 @@ def load_questions(ids: list[str] | None = None) -> list[dict]:
 
 
 def load_existing_responses() -> set[tuple[str, str]]:
-    """Return set of (question_id, platform) already recorded."""
     existing: set[tuple[str, str]] = set()
     if not RESPONSES_CSV.exists():
         return existing
@@ -56,6 +46,8 @@ def load_existing_responses() -> set[tuple[str, str]]:
 
 
 def append_response(row: dict) -> None:
+    RESPONSES_CSV.parent.mkdir(parents=True, exist_ok=True)
+
     file_exists = RESPONSES_CSV.exists() and RESPONSES_CSV.stat().st_size > 0
     fieldnames = [
         "question_id", "platform", "model_version", "response_text",
@@ -117,9 +109,9 @@ def collect_claude(questions: list[dict], existing: set) -> None:
 
 def collect_gemini(questions: list[dict], existing: set) -> None:
     try:
-        import google.generativeai as genai
+        from google import genai
     except ImportError:
-        print("ERROR: pip install google-generativeai")
+        print("ERROR: pip install google-genai")
         sys.exit(1)
 
     api_key = os.environ.get("GOOGLE_API_KEY")
@@ -127,8 +119,7 @@ def collect_gemini(questions: list[dict], existing: set) -> None:
         print("ERROR: GOOGLE_API_KEY not set.")
         sys.exit(1)
 
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel(GEMINI_MODEL)
+    client = genai.Client(api_key=api_key)
 
     for q in questions:
         if (q["question_id"], "gemini") in existing:
@@ -137,7 +128,10 @@ def collect_gemini(questions: list[dict], existing: set) -> None:
 
         print(f"  Querying Gemini: {q['question_id']} ...")
         try:
-            response = model.generate_content(q["question_text"])
+            response = client.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=q["question_text"],
+            )
             response_text = response.text
         except Exception as e:
             print(f"    ERROR: {e}")
@@ -159,12 +153,58 @@ def collect_gemini(questions: list[dict], existing: set) -> None:
     print("Gemini collection complete.")
 
 
+def collect_chatgpt(questions: list[dict], existing: set) -> None:
+    try:
+        from openai import OpenAI
+    except ImportError:
+        print("ERROR: pip install openai")
+        sys.exit(1)
+
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if not api_key:
+        print("ERROR: OPENAI_API_KEY not set.")
+        sys.exit(1)
+
+    client = OpenAI(api_key=api_key)
+
+    for q in questions:
+        if (q["question_id"], "chatgpt") in existing:
+            print(f"  Skipping {q['question_id']} (chatgpt) — already collected.")
+            continue
+
+        print(f"  Querying ChatGPT: {q['question_id']} ...")
+        try:
+            response = client.responses.create(
+                model=OPENAI_MODEL,
+                input=q["question_text"],
+            )
+            response_text = response.output_text
+        except Exception as e:
+            print(f"    ERROR: {e}")
+            continue
+
+        append_response(
+            {
+                "question_id": q["question_id"],
+                "platform": "chatgpt",
+                "model_version": OPENAI_MODEL,
+                "response_text": response_text.replace("\n", " "),
+                "programs_mentioned": "",
+                "collected_at": datetime.now(timezone.utc).isoformat(),
+                "collection_method": "api",
+            }
+        )
+        time.sleep(1)
+
+    print("ChatGPT collection complete.")
+
+
 def main() -> None:
     load_env()
     parser = argparse.ArgumentParser(description="Collect AI responses via API.")
     parser.add_argument(
         "--platform",
-        choices=["claude", "gemini"],
+        choices=["claude", "gemini", "chatgpt"],
         required=True,
         help="Which platform to query.",
     )
@@ -189,6 +229,8 @@ def main() -> None:
         collect_claude(questions, existing)
     elif args.platform == "gemini":
         collect_gemini(questions, existing)
+    elif args.platform == "chatgpt":
+        collect_chatgpt(questions, existing)
 
 
 if __name__ == "__main__":
