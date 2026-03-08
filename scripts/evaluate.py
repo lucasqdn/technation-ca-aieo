@@ -42,39 +42,73 @@ class ResponseEvaluator:
         self, target_population: str, target_sector: str, target_region: str
     ) -> list[int]:
         """
-        Return entity_ids whose classifications match the question's
+        Return active entity_ids whose classifications match the question's
         target population, sector, and region.
-        Uses OR logic within each dimension so broad questions still find results.
+
+        Matching logic:
+        - population must match if target_population is specific
+        - sector must match if target_sector is specific
+        - region must match target_region OR 'national' if target_region is specific
+        - broad defaults are ignored:
+            * general_public
+            * public_services
+            * national
+
+        This uses AND logic across dimensions, which matches the intended
+        target_population + target_sector + target_region behavior.
         """
+        base_query = """
+            SELECT DISTINCT p.entity_id
+            FROM programs p
+            WHERE p.is_active = 1
+        """
+
+        clauses: list[str] = []
         params: list[str] = []
-        conditions: list[str] = []
 
         if target_population and target_population != "general_public":
-            conditions.append("(c.dimension = 'population' AND c.value = ?)")
+            clauses.append("""
+                EXISTS (
+                    SELECT 1
+                    FROM classifications c_pop
+                    WHERE c_pop.entity_id = p.entity_id
+                    AND c_pop.dimension = 'population'
+                    AND c_pop.value = ?
+                )
+            """)
             params.append(target_population)
-        if target_sector and target_sector != "public_services":
-            conditions.append("(c.dimension = 'sector' AND c.value = ?)")
-            params.append(target_sector)
-        if target_region and target_region != "national":
-            conditions.append(
-                "(c.dimension = 'region' AND c.value IN (?, 'national'))"
-            )
-            params.extend([target_region, target_region])  # duplicated for both ?s
 
-        if not conditions:
-            # Fallback: return all active programs (capped at 200)
+        if target_sector and target_sector != "public_services":
+            clauses.append("""
+                EXISTS (
+                    SELECT 1
+                    FROM classifications c_sec
+                    WHERE c_sec.entity_id = p.entity_id
+                    AND c_sec.dimension = 'sector'
+                    AND c_sec.value = ?
+                )
+            """)
+            params.append(target_sector)
+
+        if target_region and target_region != "national":
+            clauses.append("""
+                EXISTS (
+                    SELECT 1
+                    FROM classifications c_reg
+                    WHERE c_reg.entity_id = p.entity_id
+                    AND c_reg.dimension = 'region'
+                    AND c_reg.value IN (?, 'national')
+                )
+            """)
+            params.append(target_region)
+
+        if not clauses:
             rows = self.conn.execute(
-                "SELECT DISTINCT entity_id FROM programs WHERE is_active=1 LIMIT 200"
+                "SELECT DISTINCT entity_id FROM programs WHERE is_active = 1 LIMIT 200"
             ).fetchall()
             return [r["entity_id"] for r in rows]
 
-        where_clause = " OR ".join(conditions)
-        query = f"""
-            SELECT DISTINCT c.entity_id
-            FROM classifications c
-            JOIN programs p ON c.entity_id = p.entity_id
-            WHERE p.is_active = 1 AND ({where_clause})
-        """
+        query = base_query + "\n AND " + "\n AND ".join(clauses)
         rows = self.conn.execute(query, params).fetchall()
         return [r["entity_id"] for r in rows]
 
