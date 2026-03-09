@@ -8,7 +8,7 @@ _ROOT = Path(__file__).parent.parent  # repo root
 
 RAW_DIR       = _ROOT / "data" / "raw"
 PROCESSED_DIR = _ROOT / "data" / "processed"
-DB_PATH       = _ROOT / "data" / "db" / "ground_truth.sqlite"
+DB_PATH       = _ROOT / "data" / "db" / "ground_truth.db"
 CHROMA_DIR    = _ROOT / "data" / "chroma"
 RESULTS_DIR   = _ROOT / "data" / "results"
 

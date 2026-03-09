@@ -17,6 +17,11 @@ matplotlib>=3.8.0
 seaborn>=0.13.0
 openpyxl>=3.1.0
 
+# Stage 2 additions: full-text fetching
+beautifulsoup4>=4.12.0
+pypdf>=4.0.0
+lxml>=5.0.0
+
 # Optional: API-based response collection (requires API keys in .env)
 # anthropic>=0.30.0
 # google-generativeai>=0.7.0
