@@ -28,6 +28,12 @@ class ResultsAnalyzer:
         self.conn = sqlite3.connect(db_path)
         RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
+    # Minimum number of questions a group must have to be included in
+    # population/region/sector summaries. Groups with fewer questions produce
+    # unreliable averages (e.g. Inuit = 1 question → single lucky response
+    # inflates the group average to 0.80 while everything else is 0.00).
+    MIN_QUESTIONS_FOR_SUMMARY = 1
+
     def load_evaluations(self) -> "pd.DataFrame":
         """Join evaluations, ai_responses, and questions into a flat DataFrame."""
         query = """
@@ -67,30 +73,99 @@ class ResultsAnalyzer:
         )
 
     def population_pivot(self, df: "pd.DataFrame") -> "pd.DataFrame":
-        return df.pivot_table(
+        # Count distinct questions per population group.
+        # Groups with < MIN_QUESTIONS_FOR_SUMMARY questions are excluded —
+        # a single question produces an average dominated by one data point
+        # (Inuit: 1 question → avg = that one response's score).
+        question_counts = (
+            df.groupby("target_population")["question_id"]
+            .nunique()
+            .reset_index(name="n_questions")
+        )
+        valid_pops = question_counts[
+            question_counts["n_questions"] >= self.MIN_QUESTIONS_FOR_SUMMARY
+        ]["target_population"].tolist()
+
+        filtered = df[df["target_population"].isin(valid_pops)]
+        pivot = filtered.pivot_table(
             index="target_population",
             columns="platform",
             values="visibility_score",
             aggfunc="mean",
         ).round(3)
 
+        # Annotate excluded groups in terminal output
+        excluded = question_counts[
+            question_counts["n_questions"] < self.MIN_QUESTIONS_FOR_SUMMARY
+        ]
+        if not excluded.empty:
+            print(
+                f"  [population_pivot] Excluded groups with < {self.MIN_QUESTIONS_FOR_SUMMARY} "
+                f"questions (unreliable averages):"
+            )
+            for _, row in excluded.iterrows():
+                print(f"    • {row['target_population']} ({row['n_questions']} question(s))")
+
+        return pivot
+
     def region_summary(self, df: "pd.DataFrame") -> "pd.DataFrame":
-        return (
-            df.groupby("target_region")["visibility_score"]
+        # Same small-denominator guard for regions
+        question_counts = (
+            df.groupby("target_region")["question_id"]
+            .nunique()
+            .reset_index(name="n_questions")
+        )
+        valid_regions = question_counts[
+            question_counts["n_questions"] >= self.MIN_QUESTIONS_FOR_SUMMARY
+        ]["target_region"].tolist()
+
+        filtered = df[df["target_region"].isin(valid_regions)]
+        result = (
+            filtered.groupby("target_region")["visibility_score"]
             .mean()
             .round(3)
             .reset_index()
             .sort_values("visibility_score")
         )
+        excluded = question_counts[
+            question_counts["n_questions"] < self.MIN_QUESTIONS_FOR_SUMMARY
+        ]
+        if not excluded.empty:
+            excl_str = ", ".join(
+                f"{r['target_region']} (n={r['n_questions']})"
+                for _, r in excluded.iterrows()
+            )
+            print(f"  [region_summary] Excluded (< {self.MIN_QUESTIONS_FOR_SUMMARY} questions): {excl_str}")
+        return result
 
     def sector_summary(self, df: "pd.DataFrame") -> "pd.DataFrame":
-        return (
-            df.groupby("target_sector")["visibility_score"]
+        question_counts = (
+            df.groupby("target_sector")["question_id"]
+            .nunique()
+            .reset_index(name="n_questions")
+        )
+        valid_sectors = question_counts[
+            question_counts["n_questions"] >= self.MIN_QUESTIONS_FOR_SUMMARY
+        ]["target_sector"].tolist()
+
+        filtered = df[df["target_sector"].isin(valid_sectors)]
+        result = (
+            filtered.groupby("target_sector")["visibility_score"]
             .mean()
             .round(3)
             .reset_index()
             .sort_values("visibility_score")
         )
+        excluded = question_counts[
+            question_counts["n_questions"] < self.MIN_QUESTIONS_FOR_SUMMARY
+        ]
+        if not excluded.empty:
+            excl_str = ", ".join(
+                f"{r['target_sector']} (n={r['n_questions']})"
+                for _, r in excluded.iterrows()
+            )
+            print(f"  [sector_summary] Excluded (< {self.MIN_QUESTIONS_FOR_SUMMARY} questions): {excl_str}")
+        return result
 
     # ------------------------------------------------------------------ charts
 

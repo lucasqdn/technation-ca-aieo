@@ -72,10 +72,20 @@ CREATE TABLE IF NOT EXISTS evaluations (
     evaluated_at       TEXT
 );
 
+CREATE TABLE IF NOT EXISTS program_text (
+    entity_id    INTEGER PRIMARY KEY REFERENCES programs(entity_id),
+    url          TEXT,
+    source_type  TEXT,         -- 'html' or 'pdf'
+    full_text    TEXT,
+    fetched_at   TEXT,
+    fetch_status TEXT          -- 'ok', 'error', 'skipped'
+);
+
 CREATE INDEX IF NOT EXISTS idx_clf_entity    ON classifications(entity_id);
 CREATE INDEX IF NOT EXISTS idx_clf_dim_val   ON classifications(dimension, value);
 CREATE INDEX IF NOT EXISTS idx_resp_qid      ON ai_responses(question_id);
 CREATE INDEX IF NOT EXISTS idx_resp_platform ON ai_responses(platform);
+CREATE INDEX IF NOT EXISTS idx_ptext_status  ON program_text(fetch_status);
 """
 
 
@@ -177,12 +187,55 @@ class DBBuilder:
         print(f"Loaded {inserted} AI responses.")
         return inserted
 
+    def load_program_text(self, program_text_csv: Path) -> int:
+        """
+        Load fetched full-text content into the program_text table.
+        Expected columns: entity_id, url, source_type, full_text,
+                          fetched_at, fetch_status.
+        Rows with fetch_status != 'ok' are still inserted so we can track
+        which URLs failed and avoid re-fetching them unnecessarily.
+        """
+        if not program_text_csv.exists():
+            print(f"  program_text.csv not found at {program_text_csv}, skipping.")
+            return 0
+
+        df = pd.read_csv(program_text_csv)
+        if df.empty:
+            print("  program_text.csv is empty, skipping.")
+            return 0
+
+        # Ensure all expected columns exist with safe defaults
+        for col, default in [
+            ("url", ""), ("source_type", ""), ("full_text", ""),
+            ("fetched_at", ""), ("fetch_status", "skipped"),
+        ]:
+            if col not in df.columns:
+                df[col] = default
+
+        rows = df[["entity_id", "url", "source_type",
+                   "full_text", "fetched_at", "fetch_status"]].to_dict("records")
+
+        self.conn.executemany(
+            """
+            INSERT OR REPLACE INTO program_text
+              (entity_id, url, source_type, full_text, fetched_at, fetch_status)
+            VALUES
+              (:entity_id, :url, :source_type, :full_text, :fetched_at, :fetch_status)
+            """,
+            rows,
+        )
+        self.conn.commit()
+        ok = sum(1 for r in rows if r.get("fetch_status") == "ok")
+        print(f"  Loaded {len(rows)} program_text rows ({ok} with full text).")
+        return len(rows)
+
     def run(self) -> None:
         self.create_schema()
         self.load_entities(PROCESSED_DIR / "entities.csv")
         self.load_classifications(PROCESSED_DIR / "classifications.csv")
         self.load_questions(QUESTIONS_CSV)
         self.load_responses(RESPONSES_CSV)
+        self.load_program_text(PROCESSED_DIR / "program_text.csv")
         self.conn.close()
         print("\nDatabase build complete.")
 

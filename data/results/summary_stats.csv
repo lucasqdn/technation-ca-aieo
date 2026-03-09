@@ -1,2 +1,2 @@
 total_responses,total_questions_tested,platforms_tested,overall_avg_visibility,overall_hallucination_rate_pct,lowest_visibility_region,lowest_visibility_region_score,lowest_visibility_sector,lowest_visibility_sector_score
-365,38,4,0.06,0.0,AB,0.0,housing,0.022
+144,36,4,0.092,86.8,AB,0.0,housing,0.011

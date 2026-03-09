@@ -1,0 +1,821 @@
+{
+  "query": "newcomer employment settlement",
+  "fetched_at": "2026-03-08T20:19:30.664448",
+  "count": 3,
+  "records": [
+    {
+      "additional_notes": {
+        "en": "",
+        "fr": ""
+      },
+      "audience": [],
+      "author": null,
+      "author_email": null,
+      "collection": "publication",
+      "contributor": {
+        "en": "",
+        "fr": ""
+      },
+      "creator": "",
+      "creator_user_id": "2dc5a12f-2a6f-4822-8514-165ea6bb05d9",
+      "data_series_issue_identification": {
+        "en": "",
+        "fr": ""
+      },
+      "data_series_name": {
+        "en": "",
+        "fr": ""
+      },
+      "date_published": "2024-06-25 00:00:00",
+      "departmental_identification_number": "",
+      "digital_object_identifier": "",
+      "edition": "",
+      "frequency": "as_needed",
+      "gc_catalogue_number": "",
+      "geographic_region": [],
+      "id": "efc7de0a-d040-43b8-841a-2cff2967b8f0",
+      "imso_approval": "true",
+      "isbn": "",
+      "isopen": false,
+      "issn": "",
+      "issuance": "",
+      "issuance_frequency": "",
+      "jurisdiction": "federal",
+      "keywords": {
+        "en": [
+          "Black youth",
+          "Criminal Justice",
+          "Justice System",
+          "Anti-Black racism"
+        ],
+        "fr": [
+          "Les jeunes noir",
+          "Justice pénale",
+          "Système judiciaire",
+          "le racisme à l’endroit des Noirs"
+        ]
+      },
+      "license_id": "ca-ogl-lgo",
+      "license_title": "Open Government Licence - Canada",
+      "license_url": "https://open.canada.ca/en/open-government-licence-canada",
+      "maintainer": null,
+      "metadata_created": "2024-09-03T20:40:27.043822",
+      "metadata_modified": "2024-09-03T20:40:27.043828",
+      "name": "efc7de0a-d040-43b8-841a-2cff2967b8f0",
+      "notes": "The December 2021 Mandate Letter tasked the Minister of Justice and Attorney General of Canada with the development of Canada’s Black Justice Strategy (the Strategy) to address the overrepresentation of Black people in the criminal justice system, including as victims of crime. An external Steering Group composed of nine experts and leaders from Black communities across Canada was established in February 2023 to provide advice to the Minister of Justice on the development of the Strategy.\r\n\r\nFrom March 2023 to February 2024, Steering Group discussions centered around five key issues, or pillars, that inform Black people’s experiences with the criminal justice system: Pillar 1 - Social Determinants of Justice (Employment and Income; Housing; Education; Health and Mental Health; Child Welfare; and Immigration and Settlement); Pillar 2 - Policing; Pillar 3 - Courts and Legislation ; Pillar 4 - Corrections; and Pillar 5 - Parole, Re-entry and Reintegration. In Fall 2023, 12 Black-led community-based organizations (CBOs) used the Framework developed by the Steering Group to guide community consultations, to lead engagements and consultations with Black communities in nine provinces and territories. The CBOs provided reports to the Steering Group detailing the outcomes of the consultations and engagement. Justice Canada also provided the Steering Group with the outcome of the online survey, which was developed to gather insight from community members who were unable to participate in CBO-led consultations and engagement. The report of the external Steering Group (the Report) builds on the Framework and is informed by the Steering Group discussions as well as the outcomes of community engagements and consultations.\r\n\r\nThe Report identifies five principles to guide practical actions and policies in achieving justice for Black communities in Canada: Sankofa, Africentrism, the Principle of Restraint, Evidence-based Decision Making, and Reparative Justice. Five priority areas that inform the recommendations are as follows: Decarceration, Legislative Change, Targeted Resourcing, Structural Change, and Collaboration with Provinces, Territories and Municipalities. In relation to decarceration, the Report recommends reducing the incarceration rate of Black and Indigenous people by 50% of the current rate by 2034. The Report identifies eight overarching structural and accountability recommendations, described as actions that do not fit within only one specific pillar but that are intended to drive systemic change. In addition to the overarching recommendations, there are 106 recommendations under the five pillars, organized as short, medium, or long-term.",
+      "notes_translated": {
+        "en": "The December 2021 Mandate Letter tasked the Minister of Justice and Attorney General of Canada with the development of Canada’s Black Justice Strategy (the Strategy) to address the overrepresentation of Black people in the criminal justice system, including as victims of crime. An external Steering Group composed of nine experts and leaders from Black communities across Canada was established in February 2023 to provide advice to the Minister of Justice on the development of the Strategy.\r\n\r\nFrom March 2023 to February 2024, Steering Group discussions centered around five key issues, or pillars, that inform Black people’s experiences with the criminal justice system: Pillar 1 - Social Determinants of Justice (Employment and Income; Housing; Education; Health and Mental Health; Child Welfare; and Immigration and Settlement); Pillar 2 - Policing; Pillar 3 - Courts and Legislation ; Pillar 4 - Corrections; and Pillar 5 - Parole, Re-entry and Reintegration. In Fall 2023, 12 Black-led community-based organizations (CBOs) used the Framework developed by the Steering Group to guide community consultations, to lead engagements and consultations with Black communities in nine provinces and territories. The CBOs provided reports to the Steering Group detailing the outcomes of the consultations and engagement. Justice Canada also provided the Steering Group with the outcome of the online survey, which was developed to gather insight from community members who were unable to participate in CBO-led consultations and engagement. The report of the external Steering Group (the Report) builds on the Framework and is informed by the Steering Group discussions as well as the outcomes of community engagements and consultations.\r\n\r\nThe Report identifies five principles to guide practical actions and policies in achieving justice for Black communities in Canada: Sankofa, Africentrism, the Principle of Restraint, Evidence-based Decision Making, and Reparative Justice. Five priority areas that inform the recommendations are as follows: Decarceration, Legislative Change, Targeted Resourcing, Structural Change, and Collaboration with Provinces, Territories and Municipalities. In relation to decarceration, the Report recommends reducing the incarceration rate of Black and Indigenous people by 50% of the current rate by 2034. The Report identifies eight overarching structural and accountability recommendations, described as actions that do not fit within only one specific pillar but that are intended to drive systemic change. In addition to the overarching recommendations, there are 106 recommendations under the five pillars, organized as short, medium, or long-term.",
+        "fr": "La lettre de mandat de décembre 2021 a chargé le ministre de la Justice et procureur général du Canada d’élaborer la Stratégie de justice pour les Noirs du Canada (la Stratégie) afin de remédier à la surreprésentation des Noirs dans le système de justice pénale, y compris en tant que victimes d’actes criminels. Un groupe directeur externe composé de neuf experts et dirigeants des communautés noires du Canada a été mis sur pied en février 2023 pour conseiller le ministre de la Justice sur l’élaboration de la Stratégie.\r\n\r\nDe mars 2023 à février 2024, les discussions du Groupe directeur se sont concentrées sur cinq questions clés, ou piliers, qui éclairent les expériences des personnes noires dans le système de justice pénale : Pilier 1 – Déterminants sociaux de la justice (emploi et revenu; logement; éducation; santé et santé mentale; protection de l’enfance; et immigration et établissement); Pilier 2 – Services de police; Pilier 3 – Tribunaux et lois; Pilier 4 – Services correctionnels; et Pilier 5 – Libération conditionnelle, réintégration et réinsertion. À l’automne 2023, 12 organismes communautaires dirigés par des personnes noires ont utilisé le Cadre élaboré par le Groupe directeur pour orienter des consultations communautaires, pour mener des séances de mobilisation et de consultation auprès des communautés noires dans neuf provinces et territoires. Les organisations communautaires ont présenté au Groupe directeur des rapports détaillant les résultats des consultations et de la mobilisation. Le ministère de la Justice du Canada a également fourni au Groupe directeur les résultats du sondage en ligne, qui a été créé pour recueillir les points de vue des membres de la communauté qui n’ont pas pu participer aux consultations et à la mobilisation menées par les organisations communautaires. Le rapport final du Groupe directeur externe (le rapport) s’appuie sur le Cadre et sur les discussions du Groupe directeur ainsi que sur les résultats des séances de mobilisation et de consultation communautaires.\r\n\r\nLe rapport est ancré dans cinq principes afin de guider la mise en place de mesures pratiques et de politiques visant à promouvoir la justice pour les communautés noires au Canada : Sankofa, l’afrocentrisme, le principe de retenue, la prise de décision fondée sur des données probantes et la justice réparatrice. Les cinq domaines prioritaires qui sous-tendent les recommandations sont les suivants : la désincarcération, les modifications législatives, l’affectation de ressources ciblées, des changements structurels et la collaboration avec les provinces, les territoires et les municipalités. En ce qui concerne la désincarcération, le rapport recommande de réduire le taux d’incarcération des personnes noires et des Autochtones de 50 % par rapport au taux actuel d’ici 2034. Le rapport présente huit recommandations structurelles et de responsabilisation globales, décrites comme des mesures qui ne s’inscrivent pas dans un seul pilier spécifique, mais qui visent à entraîner un changement systémique. En plus des recommandations générales, 106 recommandations sont formulées sous les cinq piliers, organisées selon qu’elles sont à court, moyen ou long terme."
+      },
+      "num_resources": 4,
+      "num_tags": 0,
+      "org_section": {
+        "en": "",
+        "fr": ""
+      },
+      "org_title_at_publication": {
+        "en": "Department of Justice Canada",
+        "fr": "Ministère de la Justice Canada"
+      },
+      "organization": {
+        "id": "5f70b0df-d227-47ef-81fe-eb3a47c4ff0a",
+        "name": "jus",
+        "title": "Department of Justice Canada | Ministère de la Justice Canada",
+        "type": "organization",
+        "description": "",
+        "image_url": "",
+        "created": "2016-09-23T17:25:37.584447",
+        "is_organization": true,
+        "approval_status": "approved",
+        "state": "active"
+      },
+      "owner_org": "5f70b0df-d227-47ef-81fe-eb3a47c4ff0a",
+      "place_of_publication": [],
+      "portal_release_date": "2024-09-03",
+      "private": false,
+      "program_page_url": {
+        "en": "",
+        "fr": ""
+      },
+      "pspc_identification_number": "",
+      "ready_to_publish": "true",
+      "restrictions": "unrestricted",
+      "series_publication_dates": {
+        "en": "",
+        "fr": ""
+      },
+      "spatial": "",
+      "state": "active",
+      "subject": [
+        "government_and_politics",
+        "law",
+        "society_and_culture"
+      ],
+      "title": "A Roadmap for Transformative Change: Canada’s Black Justice Strategy",
+      "title_translated": {
+        "en": "A Roadmap for Transformative Change: Canada’s Black Justice Strategy",
+        "fr": "Étapes pour un changement transformateur : Stratégie canadienne en matière de justice pour les personnes noires"
+      },
+      "type": "info",
+      "url": null,
+      "version": null,
+      "resources": [
+        {
+          "cache_last_updated": null,
+          "cache_url": null,
+          "character_set": "",
+          "created": "2024-09-03T20:40:27.050096",
+          "datastore_active": false,
+          "datastore_contains_all_records_of_source_file": false,
+          "date_published": "",
+          "description": null,
+          "format": "HTML",
+          "hash": "",
+          "id": "bf58f76f-a0ab-4dc6-9ab1-258748ceef53",
+          "language": [
+            "en"
+          ],
+          "last_modified": null,
+          "metadata_modified": "2024-09-03T20:40:27.036107",
+          "mimetype": null,
+          "mimetype_inner": null,
+          "name": "A Roadmap for Transformative Change: Canada’s Black Justice Strategy",
+          "name_translated": {
+            "en": "A Roadmap for Transformative Change: Canada’s Black Justice Strategy",
+            "fr": "Étapes pour un changement transformateur : Stratégie canadienne en matière de justice pour les personnes noires"
+          },
+          "package_id": "efc7de0a-d040-43b8-841a-2cff2967b8f0",
+          "position": 0,
+          "resource_type": "report",
+          "state": "active",
+          "unique_identifier": "",
+          "url": "https://www.justice.gc.ca/eng/cj-jp/cbjs-scjn/transformative-transformateur/index.html",
+          "url_type": ""
+        },
+        {
+          "cache_last_updated": null,
+          "cache_url": null,
+          "character_set": "",
+          "created": "2024-09-03T20:40:27.050100",
+          "datastore_active": false,
+          "datastore_contains_all_records_of_source_file": false,
+          "date_published": "",
+          "description": null,
+          "format": "HTML",
+          "hash": "",
+          "id": "0ef3a641-15b5-482a-82b3-7446cd9ff243",
+          "language": [
+            "fr"
+          ],
+          "last_modified": null,
+          "metadata_modified": "2024-09-03T20:40:27.037677",
+          "mimetype": null,
+          "mimetype_inner": null,
+          "name": "A Roadmap for Transformative Change: Canada’s Black Justice Strategy",
+          "name_translated": {
+            "en": "A Roadmap for Transformative Change: Canada’s Black Justice Strategy",
+            "fr": "Étapes pour un changement transformateur : Stratégie canadienne en matière de justice pour les personnes noires"
+          },
+          "package_id": "efc7de0a-d040-43b8-841a-2cff2967b8f0",
+          "position": 1,
+          "resource_type": "report",
+          "state": "active",
+          "unique_identifier": "",
+          "url": "https://www.justice.gc.ca/fra/jp-cj/scjn-cbjs/transformateur-transformative/index.html",
+          "url_type": ""
+        },
+        {
+          "cache_last_updated": null,
+          "cache_url": null,
+          "character_set": "",
+          "created": "2024-09-03T20:40:27.050102",
+          "datastore_active": false,
+          "datastore_contains_all_records_of_source_file": false,
+          "date_published": "",
+          "description": null,
+          "format": "PDF",
+          "hash": "",
+          "id": "2ed5b0e1-cc64-42b4-bd26-9094f5580fa2",
+          "language": [
+            "en"
+          ],
+          "last_modified": null,
+          "metadata_modified": "2024-09-03T20:40:27.039194",
+          "mimetype": null,
+          "mimetype_inner": null,
+          "name": "A Roadmap for Transformative Change: Canada’s Black Justice Strategy",
+          "name_translated": {
+            "en": "A Roadmap for Transformative Change: Canada’s Black Justice Strategy",
+            "fr": "Étapes pour un changement transformateur : Stratégie canadienne en matière de justice pour les personnes noires"
+          },
+          "package_id": "efc7de0a-d040-43b8-841a-2cff2967b8f0",
+          "position": 2,
+          "resource_type": "report",
+          "state": "active",
+          "unique_identifier": "",
+          "url": "https://www.justice.gc.ca/eng/cj-jp/cbjs-scjn/transformative-transformateur/pdf/CS-24-110-CBJS-GV-DA_06-25-24-EN.pdf",
+          "url_type": ""
+        },
+        {
+          "cache_last_updated": null,
+          "cache_url": null,
+          "character_set": "",
+          "created": "2024-09-03T20:40:27.050103",
+          "datastore_active": false,
+          "datastore_contains_all_records_of_source_file": false,
+          "date_published": "",
+          "description": null,
+          "format": "PDF",
+          "hash": "",
+          "id": "45e21fac-31d6-4f1a-9371-f170a2ff7e6f",
+          "language": [
+            "fr"
+          ],
+          "last_modified": null,
+          "metadata_modified": "2024-09-03T20:40:27.040683",
+          "mimetype": null,
+          "mimetype_inner": null,
+          "name": "A Roadmap for Transformative Change: Canada’s Black Justice Strategy",
+          "name_translated": {
+            "en": "A Roadmap for Transformative Change: Canada’s Black Justice Strategy",
+            "fr": "Étapes pour un changement transformateur : Stratégie canadienne en matière de justice pour les personnes noires"
+          },
+          "package_id": "efc7de0a-d040-43b8-841a-2cff2967b8f0",
+          "position": 3,
+          "resource_type": "report",
+          "state": "active",
+          "unique_identifier": "",
+          "url": "https://www.justice.gc.ca/fra/jp-cj/scjn-cbjs/transformateur-transformative/pdf/CS-24-110-CBJS-GV-DA_06-25-24-FR.pdf",
+          "url_type": ""
+        }
+      ],
+      "tags": [],
+      "groups": [],
+      "relationships_as_subject": [],
+      "relationships_as_object": []
+    },
+    {
+      "additional_notes": {
+        "fr": "",
+        "en": ""
+      },
+      "audience": [
+        "aboriginal_peoples",
+        "employers",
+        "general_public",
+        "government",
+        "immigrants",
+        "media",
+        "nongovernmental_organizations",
+        "students"
+      ],
+      "author": null,
+      "author_email": null,
+      "collection": "publication",
+      "contributor": {
+        "fr": "",
+        "en": ""
+      },
+      "creator": "",
+      "creator_user_id": "4cfa9a9c-1d95-40eb-86f9-bc0c8ec45d1f",
+      "data_series_issue_identification": {
+        "fr": "",
+        "en": ""
+      },
+      "data_series_name": {
+        "fr": "",
+        "en": ""
+      },
+      "date_published": "2017-02-03 00:00:00",
+      "departmental_identification_number": "",
+      "digital_object_identifier": "",
+      "edition": "",
+      "frequency": "P1Y",
+      "gc_catalogue_number": "",
+      "geographic_region": [],
+      "id": "a4149545-b696-422d-89f6-47eb4723dbed",
+      "imso_approval": "true",
+      "isbn": "",
+      "isopen": false,
+      "issn": "2371-8250",
+      "issuance": "",
+      "issuance_frequency": "",
+      "jurisdiction": "federal",
+      "keywords": {
+        "fr": [
+          "Gestion des litiges",
+          "Revue de l'année",
+          "Droit constitutionnel",
+          "Citoyenneté",
+          "Litige des réfugiés et de l'immigration",
+          "Cabinet du procureur général",
+          "Ministère de la Justice",
+          "Ententes sur les revendications territoriales globales",
+          "Droits ancestraux",
+          "Droits des travailleurs",
+          "Valeurs canadiennes",
+          "Charte des droits et libertés",
+          "Renforcement Loi sur la citoyenneté canadienne",
+          "Politique sur les litiges",
+          "Mandats ministériels",
+          "Litiges respectueux",
+          "Interventions judiciaires ciblées",
+          "Réconciliation",
+          "Règlement",
+          "Transparence",
+          "Contentieux criminel"
+        ],
+        "en": [
+          "Litigation management",
+          "Year in Review",
+          "Constitutional Law",
+          "Citizenship",
+          "Refugee and Immigration litigation",
+          "Office of Attorney General",
+          "Department of Justice",
+          "Comprehensive Land Claims agreements",
+          "Aboriginal Rights",
+          "Workers Rights",
+          "Canadian Values",
+          "Charter of Rights and Freedoms",
+          "Strengthening Canadian Citizenship Act",
+          "Litigation policy",
+          "Ministerial Mandates",
+          "Respectful litigation",
+          "Targeted court interventions",
+          "Reconciliation",
+          "Settlement",
+          "Transparency",
+          "Criminal Litigation"
+        ]
+      },
+      "license_id": "ca-ogl-lgo",
+      "license_title": "Open Government Licence - Canada",
+      "license_url": "https://open.canada.ca/en/open-government-licence-canada",
+      "maintainer": null,
+      "maintainer_email": "OG-GO@justice.gc.ca",
+      "metadata_created": "2018-07-03T14:10:45.818708",
+      "metadata_modified": "2024-11-20T22:37:54.001850",
+      "name": "a4149545-b696-422d-89f6-47eb4723dbed",
+      "notes": "This Litigation Year in Review 2016 is intended to provide\r\nCanadians with some highlights of the progress we made\r\nthis past year in several important areas of litigation.\r\nIn reviewing and rethinking the Government’s litigation\r\nstrategy over the course of 2016, I focused on three main\r\nthemes: respecting the Charter of Rights and Freedoms,\r\nrecognizing the rights of Indigenous peoples, and making\r\ndecisions consistent with Canadian values. The important litigation positions highlighted below were taken in collaboration with the Minister with policy responsibility for the matter before the courts.\r\n\r\nTable of Contents\r\n5-Introduction\r\n6-7 Respecting the Charter of Rights and Freedoms\r\n8-11 Recognizing the Rights of Indigenous Peoples  \r\n13-14 Making Decisions Consistent with Canadian Values",
+      "notes_translated": {
+        "fr": "Notre rétrospective annuelle sur les litiges de 2016 a pour\r\nbut de présenter à la population canadienne quelques\r\npoints saillants des progrès que nous avons réalisés\r\nau cours de l’année écoulée dans plusieurs domaines\r\nimportants visés par des litiges. En revoyant et repensant la\r\nstratégie du gouvernement sur les litiges au cours de 2016,\r\nje me suis concentrée sur trois grands thèmes : respecter\r\nla Charte canadienne des droits et libertés, reconnaître les\r\ndroits des peuples autochtones et prendre des décisions\r\nqui concordent avec les valeurs canadiennes.Les\r\npositions importantes dans les litiges qui sont soulignées ci-dessous ont été prises en collaboration avec le ministre responsable de l’élaboration des politiques de la question\r\ndont les tribunaux étaient saisis.\r\n\r\nTable des matières\r\n5-Introduction\r\n6-7: Respecter la Charte canadienne des droits et libertés\r\n9-12: Reconnaître les droits des peuples autochtones\r\n14-15: Prendres des decision qui concrdent avec les valeurs canadiennes ",
+        "en": "This Litigation Year in Review 2016 is intended to provide\r\nCanadians with some highlights of the progress we made\r\nthis past year in several important areas of litigation.\r\nIn reviewing and rethinking the Government’s litigation\r\nstrategy over the course of 2016, I focused on three main\r\nthemes: respecting the Charter of Rights and Freedoms,\r\nrecognizing the rights of Indigenous peoples, and making\r\ndecisions consistent with Canadian values. The important litigation positions highlighted below were taken in collaboration with the Minister with policy responsibility for the matter before the courts.\r\n\r\nTable of Contents\r\n5-Introduction\r\n6-7 Respecting the Charter of Rights and Freedoms\r\n8-11 Recognizing the Rights of Indigenous Peoples  \r\n13-14 Making Decisions Consistent with Canadian Values"
+      },
+      "num_resources": 4,
+      "num_tags": 0,
+      "org_section": {
+        "fr": "",
+        "en": ""
+      },
+      "org_title_at_publication": {
+        "fr": "Ministère de la Justice",
+        "en": "Department of Justice"
+      },
+      "organization": {
+        "id": "5f70b0df-d227-47ef-81fe-eb3a47c4ff0a",
+        "name": "jus",
+        "title": "Department of Justice Canada | Ministère de la Justice Canada",
+        "type": "organization",
+        "description": "",
+        "image_url": "",
+        "created": "2016-09-23T17:25:37.584447",
+        "is_organization": true,
+        "approval_status": "approved",
+        "state": "active"
+      },
+      "owner_org": "5f70b0df-d227-47ef-81fe-eb3a47c4ff0a",
+      "place_of_publication": [],
+      "portal_release_date": "2018-07-03",
+      "private": false,
+      "program_page_url": {
+        "fr": "http://www.justice.gc.ca/fra/index.html",
+        "en": "http://www.justice.gc.ca/eng/index.html"
+      },
+      "pspc_identification_number": "",
+      "ready_to_publish": "true",
+      "restrictions": "unrestricted",
+      "series_publication_dates": {
+        "fr": "",
+        "en": ""
+      },
+      "spatial": "",
+      "state": "active",
+      "subject": [
+        "government_and_politics",
+        "labour",
+        "law",
+        "persons",
+        "processes",
+        "society_and_culture"
+      ],
+      "title": "Litigation Year in Review 2016",
+      "title_translated": {
+        "fr": "Rétrospective annuelle sur les litiges 2016",
+        "en": "Litigation Year in Review 2016"
+      },
+      "type": "info",
+      "url": null,
+      "version": null,
+      "resources": [
+        {
+          "cache_last_updated": null,
+          "cache_url": null,
+          "character_set": "",
+          "created": "2018-07-03T14:10:46.648604",
+          "datastore_active": false,
+          "datastore_contains_all_records_of_source_file": false,
+          "date_published": "",
+          "description": null,
+          "format": "PDF",
+          "hash": "",
+          "id": "5125ff60-0b81-4309-94aa-741c941b2e2b",
+          "language": [
+            "en"
+          ],
+          "last_modified": null,
+          "metadata_modified": "2024-11-20T22:37:54.012568",
+          "mimetype": null,
+          "mimetype_inner": null,
+          "name": "Litigation Year in Review 2016",
+          "name_translated": {
+            "fr": "Rétrospective annuelle sur les litiges 2016",
+            "en": "Litigation Year in Review 2016"
+          },
+          "package_id": "a4149545-b696-422d-89f6-47eb4723dbed",
+          "position": 0,
+          "related_relationship": null,
+          "related_type": null,
+          "resource_type": "publication",
+          "size": 926335,
+          "state": "active",
+          "unique_identifier": "",
+          "url": "https://open.canada.ca/data/dataset/a4149545-b696-422d-89f6-47eb4723dbed/resource/5125ff60-0b81-4309-94aa-741c941b2e2b/download/litigation-year-in-review-2016-english.pdf",
+          "url_type": "upload"
+        },
+        {
+          "cache_last_updated": null,
+          "cache_url": null,
+          "character_set": "",
+          "created": "2018-07-03T14:10:46.648612",
+          "datastore_active": false,
+          "datastore_contains_all_records_of_source_file": false,
+          "date_published": "",
+          "description": null,
+          "format": "PDF",
+          "hash": "",
+          "id": "45f4c599-e39c-40d1-90e7-f892ac7078e3",
+          "language": [
+            "fr"
+          ],
+          "last_modified": null,
+          "metadata_modified": "2024-11-20T22:37:54.012703",
+          "mimetype": null,
+          "mimetype_inner": null,
+          "name": "Litigation Year in Review 2016",
+          "name_translated": {
+            "fr": "Rétrospective annuelle sur les litiges 2016",
+            "en": "Litigation Year in Review 2016"
+          },
+          "package_id": "a4149545-b696-422d-89f6-47eb4723dbed",
+          "position": 1,
+          "related_relationship": null,
+          "related_type": null,
+          "resource_type": "publication",
+          "size": 938192,
+          "state": "active",
+          "unique_identifier": "",
+          "url": "https://open.canada.ca/data/dataset/a4149545-b696-422d-89f6-47eb4723dbed/resource/45f4c599-e39c-40d1-90e7-f892ac7078e3/download/retrospective-annuelle-sur-les-litiges-2016-francais.pdf",
+          "url_type": "upload"
+        },
+        {
+          "cache_last_updated": null,
+          "cache_url": null,
+          "character_set": "",
+          "created": "2018-07-03T14:10:46.648615",
+          "datastore_active": false,
+          "datastore_contains_all_records_of_source_file": false,
+          "date_published": "",
+          "description": null,
+          "format": "HTML",
+          "hash": "",
+          "id": "ab63358d-3db3-4aef-b522-6680dac3ce39",
+          "language": [
+            "fr"
+          ],
+          "last_modified": null,
+          "metadata_modified": "2024-11-20T22:37:54.012788",
+          "mimetype": null,
+          "mimetype_inner": null,
+          "name": "Litigation Year in Review 2016",
+          "name_translated": {
+            "fr": "Rétrospective annuelle sur les litiges 2016",
+            "en": "Litigation Year in Review 2016"
+          },
+          "package_id": "a4149545-b696-422d-89f6-47eb4723dbed",
+          "position": 2,
+          "related_relationship": null,
+          "related_type": null,
+          "resource_type": "publication",
+          "state": "active",
+          "unique_identifier": "",
+          "url": "https://www.justice.gc.ca/fra/trans/alr-lyr/index.html",
+          "url_type": null
+        },
+        {
+          "cache_last_updated": null,
+          "cache_url": null,
+          "character_set": "",
+          "created": "2018-07-03T14:10:46.648618",
+          "datastore_active": false,
+          "datastore_contains_all_records_of_source_file": false,
+          "date_published": "",
+          "description": null,
+          "format": "HTML",
+          "hash": "",
+          "id": "53e8e9d6-ba7f-4c09-822c-fb2583eba59f",
+          "language": [
+            "en"
+          ],
+          "last_modified": null,
+          "metadata_modified": "2024-11-20T22:37:54.012866",
+          "mimetype": null,
+          "mimetype_inner": null,
+          "name": "Litigation Year in Review 2016",
+          "name_translated": {
+            "fr": "Rétrospective annuelle sur les litiges 2016",
+            "en": "Litigation Year in Review 2016"
+          },
+          "package_id": "a4149545-b696-422d-89f6-47eb4723dbed",
+          "position": 3,
+          "resource_type": "publication",
+          "state": "active",
+          "unique_identifier": "",
+          "url": "https://www.justice.gc.ca/eng/trans/lyr-alr/index.html",
+          "url_type": null
+        }
+      ],
+      "tags": [],
+      "groups": [],
+      "relationships_as_subject": [],
+      "relationships_as_object": []
+    },
+    {
+      "additional_notes": {
+        "fr": "",
+        "en": ""
+      },
+      "audience": [],
+      "author": null,
+      "author_email": null,
+      "collection": "publication",
+      "contributor": {
+        "fr": "",
+        "en": ""
+      },
+      "creator": "",
+      "creator_user_id": "2dc5a12f-2a6f-4822-8514-165ea6bb05d9",
+      "data_series_issue_identification": {
+        "fr": "",
+        "en": ""
+      },
+      "data_series_name": {
+        "fr": "",
+        "en": ""
+      },
+      "date_published": "2020-01-01 00:00:00",
+      "departmental_identification_number": "",
+      "digital_object_identifier": "",
+      "edition": "",
+      "frequency": "as_needed",
+      "gc_catalogue_number": "",
+      "geographic_region": [],
+      "id": "84f9238c-4cfe-48c2-bcb5-ee840deeb2b0",
+      "imso_approval": "true",
+      "isbn": "",
+      "isopen": false,
+      "issn": "",
+      "issuance": "",
+      "issuance_frequency": "",
+      "jurisdiction": "federal",
+      "keywords": {
+        "fr": [
+          "justice pour les jeunes",
+          "la Loi sur le système de justice pénale pour les adolescents"
+        ],
+        "en": [
+          "Youth justice",
+          "Youth Criminal Justice Act"
+        ]
+      },
+      "license_id": "ca-ogl-lgo",
+      "license_title": "Open Government Licence - Canada",
+      "license_url": "https://open.canada.ca/en/open-government-licence-canada",
+      "maintainer": null,
+      "maintainer_email": "OG-GO@justice.gc.ca",
+      "metadata_created": "2022-12-05T21:22:34.858613",
+      "metadata_modified": "2023-05-17T20:25:05.543258",
+      "name": "84f9238c-4cfe-48c2-bcb5-ee840deeb2b0",
+      "notes": "The Department of Justice Canada funds projects through the Youth Justice Fund that seek to help youth who are involved in the criminal justice system (CJS). The Youth Justice Fund provides grants and contributions to projects that encourage a more effective youth justice system, respond to emerging youth justice issues, and enable greater citizen and community participation in the youth justice system.\r\n\r\nIn 2020, the Research and Statistics Division reviewed the evaluation reports that were submitted for pilot projects and received funds from 2014 to 2019. The review does not measure whether each program succeeded in meeting its goals, but rather identifies key program areas that received funding and looks for common challenges, best practices, and gaps identified by the program organizations that might help inform future projects.\r\n\r\nProgram Areas\r\nFetal Alcohol Syndrome Disorder (FASD)\r\nFetal Alcohol Syndrome Disorder (FASD) is an umbrella term used to describe diagnoses that are caused by pre-natal alcohol exposure (Fraser 2011). People with FASD are overrepresented as both offenders and victims in the CJS. FASD is a lifelong disability, and people with FASD often struggle with other major issues, such as drug or alcohol dependency, depression, and mental health challenges.\r\n\r\nSeveral of the funded programs offer services to people with FASD (or suspected of having FASD). Many offer intensive one-on-one counselling as well as support finding housing and dealing with mental health issues and addiction. Learning difficulties often make education and employment a challenge. Many youth with FASD struggle to live independently and need help with basic needs – housing and food.\r\n\r\nTrauma-informed practices\r\nTrauma is a known risk factor for youth involved in the CJS (Wolff and Shi 2012) and several programs focus on helping youth in conflict with the law deal with trauma. Some funded programs use a trauma-informed approach and some encourage general mental health and wellness. Few of the programs define their trauma-informed approach.\r\n\r\nCulturally sensitive approaches – specifically for Indigenous youth\r\nIndigenous youth are overrepresented in the CJS as both offenders and victims (Department of Justice Canada 2019). More and more service providers are offering culturally relevant programming to Indigenous clients. Several of the funded programs provide details on the types of activities that they offer. Several evaluations were done to see if staff had the capacity to provide appropriate services.\r\n\r\nThere is strong support for more culturally relevant programming and more training for service providers.\r\n\r\nCulturally sensitive approaches – new immigrants and visible minorities\r\nSeveral programs receiving funding offer specialized services to marginalized youth. Youth who are visible minorities speak of racism and barriers to success because of how they are perceived. Newcomers to Canada sometimes struggle to adapt. Several programs had notable success with mentoring programs that paired youth with mentors from their communities.\r\n\r\nFemale youth involved in the CJS\r\nAmong youth involved in the CJS, boys outnumber girls (in 2014, 72% of youth charged with a crime were male) (Allen and Superle 2016), but it has long been argued that girls need specialized programming to deal with their specific needs, rather than being included in programs designed for boys. A number of funded projects focus on girls involved in the CJS, including one program in Manitoba, called the “Empower Project” that focuses on girls with FASD.\r\n\r\nSubstance use and addiction\r\nProblematic substance use and addiction often lead to involvement with the CJS (Health Canada September 2018). Most of the funded programs that help youth deal with substance use issues focus on teaching youth to make better decisions, develop resilience, and improve life skills. Many youth participants in these programs have multiple risk factors – substance use, addiction, experience of trauma, mental health problems, and family conflict.\r\n\r\nGang involvement\r\nMany programs that received funding reach out to youth who are involved in gangs or at risk of becoming involved with gangs. Some of these youth also have issues with substance use, addiction, trauma, and mental health.\r\n\r\nIn both Ontario and Saskatchewan, there are community outreach groups that are working on developing comprehensive strategies to deal with gangs in their communities.\r\n\r\nLife skills / employment\r\nA number of funded programs focus on preparing youth for reintegration into their communities. Some of these programs help youth achieve educational goals as well as provide support in finding employment.\r\n\r\nChallenges\r\nFinding and keeping appropriate staff:\r\nmany of the programs reviewed struggle to hire and retain staff.\r\nReferrals:\r\nseveral funded programs describe challenges with their referring partners, where service providers receive fewer clients than expected or fewer clients who meet the profile for their specific program.\r\nFunding:\r\nConcern over inconsistent funding is common.\r\nTracking participants after completion of program or sentence:\r\nSeveral funded programs struggle to maintain contact with participants, thus limiting their ability to solicit feedback from clients after the program finished.\r\nIdentified gaps\r\nIndividualization of programming:\r\nA number of reviews suggest that their clients need accurate assessment and programming that is personalized to individual needs; their clients do not “fit” well into existing curricula.\r\nSupport for basics:\r\nMany youth, especially those with FASD, need help with basic needs – food and housing – before their problems with substance use, addiction, mental health, family conflict, and skill development can be addressed.\r\nMore education on Indigenous history and cultures:\r\nThere is strong support for more culturally specific programming and training to enhance cultural competencies.\r\nMore female-specific programing and female staff/mentors:\r\nSeveral funded programs note that female clients appreciate girl-only outings or programming and requested more female staff and mentors.\r\nReach out to visible minorities and recent immigrants\r\nYouth who are visible minorities may need specific programs that address racism; youth who are recent immigrants may need support to navigate the challenges of adapting to Canadian culture. Neither are well served by mainstream programs.\r\nSupport for families, not just youth in isolation::\r\nSeveral funded programs indicate that youth in contact with the CJS are often dealing with conflict within their own families and that greater support for families is needed.",
+      "notes_translated": {
+        "fr": "Le ministère de la Justice du Canada finance, par l’intermédiaire du Fonds du système de justice pour les jeunes, des projets qui visent à aider les jeunes qui ont des démêlés avec le système de justice pénale (SJP). Le Fonds du système de justice pour les jeunes offre des subventions et des contributions pour des projets visant à favoriser un système de justice efficace pour les jeunes, à réagir à de nouveaux enjeux en matière de justice pour les jeunes et à permettre une plus grande participation des citoyens et de la collectivité au système.\r\n\r\nEn 2020, la Division de la recherche et de la statistique a examiné les rapports d’évaluation qui ont été soumis concernant des projets pilotes ayant reçu des fonds de 2014 à 2019. L’examen ne vise pas à établir si chaque programme a réussi à atteindre ses objectifs, mais plutôt à déterminer les principaux secteurs de programme qui ont reçu du financement et à cerner les défis communs, les pratiques exemplaires et les lacunes qui ont été cernés par les organismes de programme et pourraient aider à éclairer les projets futurs.\r\n\r\nSecteurs de programme\r\nEnsemble des troubles causés par l’alcoolisation fœtale (ETCAF)\r\nL’ensemble des troubles causés par l’alcoolisation fœtale (ETCAF) est un terme générique utilisé pour décrire les diagnostics liés à l’exposition prénatale à l’alcool (Fraser, 2011). Les personnes atteintes de l’ETCAF sont surreprésentées en tant que délinquants et victimes dans le SJP. L’ETCAF est un handicap permanent, et les personnes atteintes de l’ETCAF sont souvent aux prises avec d’autres problèmes importants, comme la dépendance à la drogue ou à l’alcool, la dépression et des problèmes de santé mentale.\r\n\r\nPlusieurs des programmes financés offrent des services aux personnes atteintes de l’ETCAF (ou soupçonnées d’en être atteintes). Bon nombre d’entre eux offrent des services intensifs de counseling individuel ainsi que de l’aide pour trouver un logement et composer avec des problèmes de santé mentale et de toxicomanie. Les difficultés d’apprentissage font souvent de l’éducation et de l’emploi un défi. De nombreux jeunes atteints de l’ETCAF ont de la difficulté à vivre de façon autonome et ont besoin d’aide pour répondre à leurs besoins fondamentaux tels le logement et la nourriture.\r\n\r\nPratiques tenant compte des traumatismes\r\nLes traumatismes sont un facteur de risque connu chez les jeunes qui ont affaire au SJP (Wolff et Shi, 2012) et plusieurs programmes visent à aider les jeunes qui ont des démêlés avec la justice à composer avec les traumatismes. Certains programmes qui reçoivent du financement utilisent une approche tenant compte des traumatismes et d’autres encouragent la santé mentale et le mieux-être en général. Peu de programmes ont une approche définie en ce qui concerne les traumatismes.\r\n\r\nApproches adaptées à la culture pour les jeunes Autochtones\r\nLes jeunes Autochtones sont surreprésentés dans le SJP en tant que délinquants et victimes (ministère de la Justice du Canada, 2019). De plus en plus de fournisseurs de services offrent des programmes culturellement pertinents aux clients autochtones. Plusieurs des programmes financés fournissent des détails sur les types d’activités qu’ils offrent. Plusieurs évaluations ont été effectuées pour voir si le personnel avait la capacité de fournir des services appropriés.\r\n\r\nIl y a un appui solide pour des programmes plus pertinents sur le plan culturel et une formation accrue pour les fournisseurs de services.\r\n\r\nApproches adaptées à la culture pour les nouveaux immigrants et les minorités visibles\r\nPlusieurs programmes qui reçoivent du financement offrent des services spécialisés aux jeunes marginalisés. Les jeunes membres des minorités visibles parlent de racisme et d’obstacles à la réussite en raison de la façon dont ils sont perçus. Les nouveaux arrivants au Canada ont parfois du mal à s’adapter. Plusieurs programmes ont connu un succès remarquable, par exemple des programmes de mentorat qui jumelaient des jeunes avec des mentors de leur collectivité.\r\n\r\nJeunes filles ayant des démêlés avec le système de justice pénale\r\nParmi les jeunes ayant des démêlés avec le SJP, les garçons sont plus nombreux que les filles (en 2014, 72 % des jeunes accusés d’un crime étaient de sexe masculin) (Allen et Superle, 2016), mais on soutient depuis longtemps que les filles ont besoin de programmes spécialisés pour répondre à leurs besoins particuliers, plutôt que d’être incluses dans des programmes conçus pour les garçons. Un certain nombre de projets financés sont axés sur les filles ayant des démêlés avec le SJP, y compris un programme au Manitoba, appelé « Empower Project » (projet d’autonomisation), qui est axé sur les filles atteintes de l’ETCAF.\r\n\r\nUsage de substances et dépendance\r\nL’usage problématique de substances et la dépendance mènent souvent à des démêlés avec le SJP (Santé Canada, septembre 2018). La plupart des programmes financés qui aident les jeunes à faire face aux problèmes de toxicomanie visent à apprendre aux jeunes à prendre de meilleures décisions, à développer leur résilience et à améliorer leurs aptitudes à la vie quotidienne. De nombreux jeunes participants à ces programmes présentent de multiples facteurs de risque : usage de substance, dépendance, traumatismes, problèmes de santé mentale et conflits familiaux.\r\n\r\nAppartenance à un gang\r\nDe nombreux programmes qui ont reçu du financement s’adressent aux jeunes qui font partie de gangs ou qui risquent de s’y joindre. Certains de ces jeunes ont aussi des problèmes d’usage de substances, de dépendance, de traumatismes et de santé mentale.\r\n\r\nEn Ontario et en Saskatchewan, il y a des groupes communautaires qui travaillent à l’élaboration de stratégies globales pour lutter contre les gangs dans leurs collectivités.\r\n\r\nAptitudes à la vie quotidienne / emploi\r\nUn certain nombre de programmes financés visent à préparer les jeunes à leur réinsertion dans la collectivité. Certains de ces programmes aident les jeunes à atteindre leurs objectifs d’éducation et à trouver un emploi.\r\n\r\nDéfis\r\nTrouver et conserver le bon personnel\r\nBon nombre des programmes examinés ont de la difficulté à embaucher et à maintenir en poste du personnel.\r\nAiguillage\r\nPlusieurs programmes financés décrivent des difficultés avec les partenaires qui leur envoient des clients, les fournisseurs de services recevant moins de clients que prévu ou moins de clients qui correspondent au profil de leur programme particulier.\r\nFinancement\r\nLes préoccupations relatives à l'instabilité du financement sont courantes.\r\nSuivi des participants après la fin du programme ou de la peine\r\nPlusieurs programmes financés ont de la difficulté à maintenir le contact avec les participants, ce qui limite leur capacité de demander des commentaires aux clients après la fin du programme.\r\nLacunes observées\r\nIndividualisation des programmes\r\nUn certain nombre d’examens indiquent que les clients ont besoin d’une évaluation et d’un programme précis qui sont personnalisés en fonction de leurs besoins individuels; leurs clients ne « s’intègrent » pas bien dans les programmes existants.\r\nAide pour leurs besoins fondamentaux\r\nDe nombreux jeunes, en particulier ceux qui sont atteints de l’ETCAF, ont besoin d’aide pour répondre à leurs besoins fondamentaux – la nourriture et le logement – avant que leurs problèmes d’usage de substances, de dépendance, de santé mentale, de conflit familial et de développement des compétences puissent être abordés.\r\nÉducation accrue sur l’histoire et les cultures autochtones\r\nIl y a un fort appui pour des programmes et une formation mieux adaptés à la culture afin d’améliorer les compétences culturelles.\r\nDavantage de programmes pour les femmes et d’employés et de mentors de sexe féminin\r\nPlusieurs programmes financés indiquent que les clientes apprécient les sorties ou les programmes réservés aux filles et ont demandé plus de personnel et de mentors de sexe féminin.\r\nTendre la main aux minorités visibles et aux immigrants récents\r\nLes jeunes qui sont membres de minorités visibles peuvent avoir besoin de programmes précis pour lutter contre le racisme. Les jeunes qui sont de nouveaux immigrants peuvent avoir besoin d’aide pour surmonter les défis liés à l’adaptation à la culture canadienne. Ni l’un ni l’autre de ces groupes ne sont bien servis par les programmes ordinaires.\r\nSoutien aux familles, pas seulement aux jeunes isolés\r\nPlusieurs programmes financés indiquent que les jeunes ayant des démêlés avec le SJP sont souvent aux prises avec des conflits au sein de leur propre famille et qu’un soutien accru aux familles est nécessaire.",
+        "en": "The Department of Justice Canada funds projects through the Youth Justice Fund that seek to help youth who are involved in the criminal justice system (CJS). The Youth Justice Fund provides grants and contributions to projects that encourage a more effective youth justice system, respond to emerging youth justice issues, and enable greater citizen and community participation in the youth justice system.\r\n\r\nIn 2020, the Research and Statistics Division reviewed the evaluation reports that were submitted for pilot projects and received funds from 2014 to 2019. The review does not measure whether each program succeeded in meeting its goals, but rather identifies key program areas that received funding and looks for common challenges, best practices, and gaps identified by the program organizations that might help inform future projects.\r\n\r\nProgram Areas\r\nFetal Alcohol Syndrome Disorder (FASD)\r\nFetal Alcohol Syndrome Disorder (FASD) is an umbrella term used to describe diagnoses that are caused by pre-natal alcohol exposure (Fraser 2011). People with FASD are overrepresented as both offenders and victims in the CJS. FASD is a lifelong disability, and people with FASD often struggle with other major issues, such as drug or alcohol dependency, depression, and mental health challenges.\r\n\r\nSeveral of the funded programs offer services to people with FASD (or suspected of having FASD). Many offer intensive one-on-one counselling as well as support finding housing and dealing with mental health issues and addiction. Learning difficulties often make education and employment a challenge. Many youth with FASD struggle to live independently and need help with basic needs – housing and food.\r\n\r\nTrauma-informed practices\r\nTrauma is a known risk factor for youth involved in the CJS (Wolff and Shi 2012) and several programs focus on helping youth in conflict with the law deal with trauma. Some funded programs use a trauma-informed approach and some encourage general mental health and wellness. Few of the programs define their trauma-informed approach.\r\n\r\nCulturally sensitive approaches – specifically for Indigenous youth\r\nIndigenous youth are overrepresented in the CJS as both offenders and victims (Department of Justice Canada 2019). More and more service providers are offering culturally relevant programming to Indigenous clients. Several of the funded programs provide details on the types of activities that they offer. Several evaluations were done to see if staff had the capacity to provide appropriate services.\r\n\r\nThere is strong support for more culturally relevant programming and more training for service providers.\r\n\r\nCulturally sensitive approaches – new immigrants and visible minorities\r\nSeveral programs receiving funding offer specialized services to marginalized youth. Youth who are visible minorities speak of racism and barriers to success because of how they are perceived. Newcomers to Canada sometimes struggle to adapt. Several programs had notable success with mentoring programs that paired youth with mentors from their communities.\r\n\r\nFemale youth involved in the CJS\r\nAmong youth involved in the CJS, boys outnumber girls (in 2014, 72% of youth charged with a crime were male) (Allen and Superle 2016), but it has long been argued that girls need specialized programming to deal with their specific needs, rather than being included in programs designed for boys. A number of funded projects focus on girls involved in the CJS, including one program in Manitoba, called the “Empower Project” that focuses on girls with FASD.\r\n\r\nSubstance use and addiction\r\nProblematic substance use and addiction often lead to involvement with the CJS (Health Canada September 2018). Most of the funded programs that help youth deal with substance use issues focus on teaching youth to make better decisions, develop resilience, and improve life skills. Many youth participants in these programs have multiple risk factors – substance use, addiction, experience of trauma, mental health problems, and family conflict.\r\n\r\nGang involvement\r\nMany programs that received funding reach out to youth who are involved in gangs or at risk of becoming involved with gangs. Some of these youth also have issues with substance use, addiction, trauma, and mental health.\r\n\r\nIn both Ontario and Saskatchewan, there are community outreach groups that are working on developing comprehensive strategies to deal with gangs in their communities.\r\n\r\nLife skills / employment\r\nA number of funded programs focus on preparing youth for reintegration into their communities. Some of these programs help youth achieve educational goals as well as provide support in finding employment.\r\n\r\nChallenges\r\nFinding and keeping appropriate staff:\r\nmany of the programs reviewed struggle to hire and retain staff.\r\nReferrals:\r\nseveral funded programs describe challenges with their referring partners, where service providers receive fewer clients than expected or fewer clients who meet the profile for their specific program.\r\nFunding:\r\nConcern over inconsistent funding is common.\r\nTracking participants after completion of program or sentence:\r\nSeveral funded programs struggle to maintain contact with participants, thus limiting their ability to solicit feedback from clients after the program finished.\r\nIdentified gaps\r\nIndividualization of programming:\r\nA number of reviews suggest that their clients need accurate assessment and programming that is personalized to individual needs; their clients do not “fit” well into existing curricula.\r\nSupport for basics:\r\nMany youth, especially those with FASD, need help with basic needs – food and housing – before their problems with substance use, addiction, mental health, family conflict, and skill development can be addressed.\r\nMore education on Indigenous history and cultures:\r\nThere is strong support for more culturally specific programming and training to enhance cultural competencies.\r\nMore female-specific programing and female staff/mentors:\r\nSeveral funded programs note that female clients appreciate girl-only outings or programming and requested more female staff and mentors.\r\nReach out to visible minorities and recent immigrants\r\nYouth who are visible minorities may need specific programs that address racism; youth who are recent immigrants may need support to navigate the challenges of adapting to Canadian culture. Neither are well served by mainstream programs.\r\nSupport for families, not just youth in isolation::\r\nSeveral funded programs indicate that youth in contact with the CJS are often dealing with conflict within their own families and that greater support for families is needed."
+      },
+      "num_resources": 4,
+      "num_tags": 0,
+      "org_section": {
+        "fr": "",
+        "en": ""
+      },
+      "org_title_at_publication": {
+        "fr": "Ministère de la Justice Canada",
+        "en": "Department of Justice Canada"
+      },
+      "organization": {
+        "id": "5f70b0df-d227-47ef-81fe-eb3a47c4ff0a",
+        "name": "jus",
+        "title": "Department of Justice Canada | Ministère de la Justice Canada",
+        "type": "organization",
+        "description": "",
+        "image_url": "",
+        "created": "2016-09-23T17:25:37.584447",
+        "is_organization": true,
+        "approval_status": "approved",
+        "state": "active"
+      },
+      "owner_org": "5f70b0df-d227-47ef-81fe-eb3a47c4ff0a",
+      "place_of_publication": [],
+      "portal_release_date": "2022-12-05",
+      "private": false,
+      "program_page_url": {
+        "fr": "",
+        "en": ""
+      },
+      "pspc_identification_number": "",
+      "ready_to_publish": "true",
+      "restrictions": "unrestricted",
+      "series_publication_dates": {
+        "fr": "",
+        "en": ""
+      },
+      "spatial": "",
+      "state": "active",
+      "subject": [
+        "government_and_politics",
+        "law",
+        "persons",
+        "society_and_culture"
+      ],
+      "title": "Themes from a review of Justice Canada funded projects for youth in conflict with the law (2014-2019)",
+      "title_translated": {
+        "fr": "Thèmes d’un examen des projets financés par le ministère de la Justice du Canada pour les jeunes ayant des démêlés avec la justice (2014-2019)",
+        "en": "Themes from a review of Justice Canada funded projects for youth in conflict with the law (2014-2019)"
+      },
+      "type": "info",
+      "url": null,
+      "version": null,
+      "resources": [
+        {
+          "cache_last_updated": null,
+          "cache_url": null,
+          "character_set": "",
+          "created": "2022-12-05T21:22:35.031433",
+          "datastore_active": false,
+          "datastore_contains_all_records_of_source_file": false,
+          "date_published": "",
+          "description": "",
+          "format": "HTML",
+          "hash": "",
+          "id": "059b404c-7df1-42a9-aa61-7a053a3b0de9",
+          "language": [
+            "en"
+          ],
+          "last_modified": null,
+          "metadata_modified": "2022-12-05T21:22:35.031433",
+          "mimetype": null,
+          "mimetype_inner": null,
+          "name": "Themes from a review of Justice Canada funded projects for youth in conflict with the law (2014-2019)",
+          "name_translated": {
+            "fr": "Thèmes d’un examen des projets financés par le ministère de la Justice du Canada pour les jeunes ayant des démêlés avec la justice (2014-2019)",
+            "en": "Themes from a review of Justice Canada funded projects for youth in conflict with the law (2014-2019)"
+          },
+          "package_id": "84f9238c-4cfe-48c2-bcb5-ee840deeb2b0",
+          "position": 0,
+          "related_relationship": null,
+          "related_type": null,
+          "resource_type": "publication",
+          "state": "active",
+          "unique_identifier": "",
+          "url": "https://www.justice.gc.ca/eng/rp-pr/jr/themes/index.html",
+          "url_type": null
+        },
+        {
+          "cache_last_updated": null,
+          "cache_url": null,
+          "character_set": "",
+          "created": "2022-12-05T21:22:35.031443",
+          "datastore_active": false,
+          "datastore_contains_all_records_of_source_file": false,
+          "date_published": "",
+          "description": "",
+          "format": "HTML",
+          "hash": "",
+          "id": "c688cf70-b5c1-4622-9270-bd49ea191d98",
+          "language": [
+            "fr"
+          ],
+          "last_modified": null,
+          "metadata_modified": "2022-12-05T21:22:35.031443",
+          "mimetype": null,
+          "mimetype_inner": null,
+          "name": "Themes from a review of Justice Canada funded projects for youth in conflict with the law (2014-2019)",
+          "name_translated": {
+            "fr": "Thèmes d’un examen des projets financés par le ministère de la Justice du Canada pour les jeunes ayant des démêlés avec la justice (2014-2019)",
+            "en": "Themes from a review of Justice Canada funded projects for youth in conflict with the law (2014-2019)"
+          },
+          "package_id": "84f9238c-4cfe-48c2-bcb5-ee840deeb2b0",
+          "position": 1,
+          "related_relationship": null,
+          "related_type": null,
+          "resource_type": "publication",
+          "state": "active",
+          "unique_identifier": "",
+          "url": "https://www.justice.gc.ca/fra/pr-rp/jr/themes/index.html",
+          "url_type": null
+        },
+        {
+          "cache_last_updated": null,
+          "cache_url": null,
+          "character_set": "",
+          "created": "2022-12-05T21:22:35.031446",
+          "datastore_active": false,
+          "datastore_contains_all_records_of_source_file": false,
+          "date_published": "",
+          "description": "",
+          "format": "PDF",
+          "hash": "",
+          "id": "f65d74a7-ae21-4223-9af5-40401925a5e5",
+          "language": [
+            "en"
+          ],
+          "last_modified": null,
+          "metadata_modified": "2022-12-05T21:22:35.031446",
+          "mimetype": null,
+          "mimetype_inner": null,
+          "name": "Themes from a review of Justice Canada funded projects for youth in conflict with the law (2014-2019)",
+          "name_translated": {
+            "fr": "Thèmes d’un examen des projets financés par le ministère de la Justice du Canada pour les jeunes ayant des démêlés avec la justice (2014-2019)",
+            "en": "Themes from a review of Justice Canada funded projects for youth in conflict with the law (2014-2019)"
+          },
+          "package_id": "84f9238c-4cfe-48c2-bcb5-ee840deeb2b0",
+          "position": 2,
+          "related_relationship": null,
+          "related_type": null,
+          "resource_type": "publication",
+          "state": "active",
+          "unique_identifier": "",
+          "url": "https://www.justice.gc.ca/eng/rp-pr/jr/themes/pdf/themes-projet-en.pdf",
+          "url_type": null
+        },
+        {
+          "cache_last_updated": null,
+          "cache_url": null,
+          "character_set": "",
+          "created": "2022-12-05T21:22:35.031449",
+          "datastore_active": false,
+          "datastore_contains_all_records_of_source_file": false,
+          "date_published": "",
+          "description": "",
+          "format": "PDF",
+          "hash": "",
+          "id": "6987ddfc-78a8-4392-b0bf-316bb3a44cf6",
+          "language": [
+            "fr"
+          ],
+          "last_modified": null,
+          "metadata_modified": "2022-12-05T21:22:35.031449",
+          "mimetype": null,
+          "mimetype_inner": null,
+          "name": "Themes from a review of Justice Canada funded projects for youth in conflict with the law (2014-2019)",
+          "name_translated": {
+            "fr": "Thèmes d’un examen des projets financés par le ministère de la Justice du Canada pour les jeunes ayant des démêlés avec la justice (2014-2019)",
+            "en": "Themes from a review of Justice Canada funded projects for youth in conflict with the law (2014-2019)"
+          },
+          "package_id": "84f9238c-4cfe-48c2-bcb5-ee840deeb2b0",
+          "position": 3,
+          "related_relationship": null,
+          "related_type": null,
+          "resource_type": "publication",
+          "state": "active",
+          "unique_identifier": "",
+          "url": "https://www.justice.gc.ca/fra/pr-rp/jr/themes/pdf/themes-projet-fr.pdf",
+          "url_type": null
+        }
+      ],
+      "tags": [],
+      "groups": [],
+      "relationships_as_subject": [],
+      "relationships_as_object": []
+    }
+  ]
+}
