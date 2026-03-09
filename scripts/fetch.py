@@ -7,6 +7,7 @@ from pathlib import Path
 import requests
 
 from config import (
+    ALLOWED_COLLECTIONS,
     CKAN_PACKAGE_SEARCH_URL,
     RAW_DIR,
     ROWS_PER_QUERY,
@@ -28,6 +29,7 @@ class CKANFetcher:
         while True:
             params = {
                 "q": query,
+                "fq": " OR ".join(f"collection:{c}" for c in ALLOWED_COLLECTIONS),
                 "rows": rows,
                 "start": start,
             }

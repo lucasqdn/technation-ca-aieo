@@ -6,6 +6,7 @@ from pathlib import Path
 import pandas as pd
 
 from config import (
+    ALLOWED_COLLECTIONS,
     POPULATION_KEYWORDS,
     PROCESSED_DIR,
     RAW_DIR,
@@ -26,12 +27,14 @@ class CKANParser:
                 data = json.load(f)
 
             for rec in data.get("records", []):
+                if rec.get("collection") not in ALLOWED_COLLECTIONS:
+                    continue
                 rec_id = rec.get("id")
                 if rec_id and rec_id not in self.seen_ids:
                     self.seen_ids.add(rec_id)
                     all_records.append(rec)
 
-        print(f"Loaded {len(all_records)} unique records from raw files.")
+        print(f"Loaded {len(all_records)} unique publication records from raw files.")
         return all_records
 
     def clean_text(self, text: str | None) -> str:

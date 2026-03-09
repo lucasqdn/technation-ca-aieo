@@ -35,6 +35,10 @@ SEARCH_QUERIES = [
 
 ROWS_PER_QUERY = 100
 
+# Only fetch publication records (HTML/PDF documents, evaluation reports).
+# Excludes "primary" (CSV datasets) and "federated" (external datasets).
+ALLOWED_COLLECTIONS = {"publication"}
+
 REGION_VALUES = [
     "national", "BC", "AB", "SK", "MB", "ON",
     "QC", "NB", "NS", "PEI", "NL", "YT", "NT", "NU"
